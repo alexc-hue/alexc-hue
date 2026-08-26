@@ -1,16 +1,24 @@
-## Hi there 👋
+## Hi, I'm Alex
 
-<!--
-**alexc-hue/alexc-hue** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Project controls and PM professional working in engineering and infrastructure
+delivery. I build the tools I used to track manually in spreadsheets: EVM
+dashboards, schedule and risk analysis, reporting automation, mostly in Python.
 
-Here are some ideas to get you started:
+**Background:** project controls and technical PM roles across engineering and
+automation environments (Honeywell, HMH), including hands-on plant and process
+scripting (VBScript, Structured Text, FBD).
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Currently building
+
+- [project-controls-dashboard](https://github.com/alexc-hue/project-controls-dashboard) 
+  — EVM metrics (SPI, CPI, EAC/ETC/VAC), milestone tracking, and risk register 
+  analysis from raw project data, with charts and a status report.
+
+### Tools I work with
+
+Python (pandas, matplotlib), MATLAB, project controls methods (EVM, schedule 
+and risk analysis), Excel-based reporting.
+
+### Elsewhere
+
+[LinkedIn](https://www.linkedin.com/in/alexandru-nicolau-pmp%C2%AE-b64274165/)
