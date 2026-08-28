@@ -1,12 +1,14 @@
 ## Hi, I'm Alex
 
-Project controls and PM professional working in engineering and infrastructure
-delivery. I build the tools I used to track manually in spreadsheets: EVM
-dashboards, schedule and risk analysis, reporting automation, mostly in Python.
+Project controls and technical PM professional working across industrial and 
+OT/IT delivery programmes. My background sits at the intersection of project 
+controls, technical project management, and automation: EVM, schedule health 
+tracking, risk management, and technical delivery within industrial 
+automation environments.
 
-**Background:** project controls and technical PM roles across engineering and
-automation environments (Honeywell, HMH), including hands-on plant and process
-scripting (VBScript, Structured Text, FBD).
+**Background:** project controls and technical PM roles across engineering, 
+industrial automation, and OT/IT delivery (Honeywell, HMH), including plant 
+and process scripting (VBScript, Structured Text, FBD).
 
 ### Currently building
 
