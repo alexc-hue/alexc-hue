@@ -10,11 +10,23 @@ automation environments.
 industrial automation, and OT/IT delivery (Honeywell, HMH), including plant 
 and process scripting (VBScript, Structured Text, FBD).
 
-### Currently building
+### Project Controls Toolkit
+
+Four small tools covering the core project controls disciplines, each 
+reading from CSVs and producing charts plus a saved report:
 
 - [project-controls-dashboard](https://github.com/alexc-hue/project-controls-dashboard) 
-  — EVM metrics (SPI, CPI, EAC/ETC/VAC), milestone tracking, and risk register 
-  analysis from raw project data, with charts and a status report.
+  — EVM (SPI/CPI/EAC/ETC/VAC), milestone tracking, risk register, and change 
+  register, in one status report.
+- [schedule-health-analyzer](https://github.com/alexc-hue/schedule-health-analyzer) 
+  — Critical Path Method, baseline vs current schedule, float erosion, and a 
+  Schedule Health Score.
+- [change-control-register](https://github.com/alexc-hue/change-control-register) 
+  — cumulative budget/schedule creep from approved changes, decision cycle 
+  time, stale pending changes flagged.
+- [risk-trend-tracker](https://github.com/alexc-hue/risk-trend-tracker) 
+  — risk register tracked over time: exposure trend, per-risk trajectory, 
+  and mitigation effectiveness.
 
 ### Tools I work with
 
