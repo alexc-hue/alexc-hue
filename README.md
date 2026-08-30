@@ -16,7 +16,7 @@ and process scripting (VBScript, Structured Text, FBD).
 
 ### Project Controls Toolkit
 
-Four practical tools that operationalize core project-controls disciplines 
+Five practical tools that operationalize core project-controls disciplines 
 as software, each reading from CSVs and producing charts plus a saved report:
 
 **Schedule Integrity**
@@ -36,6 +36,12 @@ as software, each reading from CSVs and producing charts plus a saved report:
 - [project-controls-dashboard](https://github.com/alexc-hue/project-controls-dashboard) 
   — EVM (SPI/CPI/EAC/ETC/VAC), milestone tracking, risk register, and change 
   register, in one status report.
+
+**Integration**
+- [project-controls-reporting-engine](https://github.com/alexc-hue/project-controls-reporting-engine) 
+  — composes the four tools above against one consistent programme into a 
+  single integrated status report, no new logic, just the four disciplines' 
+  findings shown side by side.
 
 ### Tools I work with
 
