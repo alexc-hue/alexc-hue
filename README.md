@@ -12,7 +12,7 @@ and process scripting (VBScript, Structured Text, FBD).
 
 ### Project Controls Toolkit
 
-Four small tools covering the core project controls disciplines, each 
+Four tools covering the core project controls disciplines, each 
 reading from CSVs and producing charts plus a saved report:
 
 - [project-controls-dashboard](https://github.com/alexc-hue/project-controls-dashboard) 
