@@ -1,10 +1,10 @@
 ## Hi, I'm Alex
 
 Project controls and technical PM professional working across industrial and 
-OT/IT delivery programmes. My background sits at the intersection of project 
-controls, technical project management, and automation: EVM, schedule health 
-tracking, risk management, and technical delivery within industrial 
-automation environments.
+OT/IT delivery programmes. My core discipline is project controls, EVM, CPM 
+scheduling, risk management, and change control, and I build the software 
+that operationalizes it: methodologies that are usually run by hand in a 
+spreadsheet, turned into repeatable, automated tools.
 
 **Background:** project controls and technical PM roles across engineering, 
 industrial automation, and OT/IT delivery (Honeywell, HMH), including plant 
@@ -12,8 +12,8 @@ and process scripting (VBScript, Structured Text, FBD).
 
 ### Project Controls Toolkit
 
-Four tools covering the core project controls disciplines, each 
-reading from CSVs and producing charts plus a saved report:
+Four practical tools that operationalize core project-controls disciplines 
+as software, each reading from CSVs and producing charts plus a saved report:
 
 - [project-controls-dashboard](https://github.com/alexc-hue/project-controls-dashboard) 
   — EVM (SPI/CPI/EAC/ETC/VAC), milestone tracking, risk register, and change 
@@ -30,8 +30,9 @@ reading from CSVs and producing charts plus a saved report:
 
 ### Tools I work with
 
-Python (pandas, matplotlib), MATLAB, project controls methods (EVM, schedule 
-and risk analysis), Excel-based reporting.
+Project controls methods (EVM, CPM, schedule and risk analysis), 
+operationalized in Python (pandas, matplotlib) and Excel. Also comfortable 
+in MATLAB.
 
 ### Elsewhere
 
