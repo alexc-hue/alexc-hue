@@ -17,7 +17,11 @@ and process scripting (VBScript, Structured Text, FBD).
 ### Project Controls Toolkit
 
 Six practical tools that operationalize core project-controls disciplines
-as software, each reading from CSVs and producing charts plus a saved report:
+as software, each reading from CSVs and producing charts plus a saved
+report. All six also share one fixed status color convention (good,
+warning, serious, critical) and chart style, the same single RAG standard a
+project controls function would enforce across a programme, not six
+different ad-hoc looks:
 
 **Schedule Integrity**
 - [schedule-health-analyzer](https://github.com/alexc-hue/schedule-health-analyzer)
