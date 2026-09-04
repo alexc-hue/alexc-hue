@@ -1,8 +1,8 @@
 ## Hi, I'm Alex
 
-Project controls and technical PM professional working across industrial and
-OT/IT delivery programmes. My core discipline is project controls, EVM, CPM
-scheduling, risk management, and change control, and I build the software
+Project controls and technical PM professional (PMP®-certified) working across
+industrial and OT/IT delivery programmes. My core discipline is project controls,
+EVM, CPM scheduling, risk management, and change control, and I build the software
 that operationalizes it: methodologies that are usually run by hand in a
 spreadsheet, turned into repeatable, automated tools.
 
@@ -11,8 +11,8 @@ from four months behind schedule to three weeks late, an 85%+ recovery,
 using the same EVM/CPM discipline this toolkit automates.
 
 **Background:** project controls and technical PM roles across engineering,
-industrial automation, and OT/IT delivery (Honeywell, HMH), including plant
-and process scripting (VBScript, Structured Text, FBD).
+industrial automation, and OT/IT delivery, including plant and
+process scripting (VBScript, Structured Text, FBD).
 
 ### Project Controls Toolkit
 
