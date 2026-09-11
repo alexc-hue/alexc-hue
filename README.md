@@ -54,6 +54,14 @@ different ad-hoc looks:
   toolkit's decision layer: the other five tools report a status, this one
   recommends what to do about it.
 
+A note on the code itself: project-controls-reporting-engine and
+recovery-scenario-planner don't import the other four tools' logic, they
+vendor it, exact copies of the EVM, CPM, and risk-scoring modules, kept in
+sync by hand whenever the source tool changes. That's a deliberate
+convention, not copy-paste sloppiness: every repo in this toolkit needs to
+stand alone and be cloneable on its own, so the two composite tools can't
+depend on the four standalone repos being installed alongside them.
+
 ### Tools I work with
 
 Project controls methods (EVM, CPM, schedule and risk analysis),
