@@ -68,6 +68,15 @@ Project controls methods (EVM, CPM, schedule and risk analysis),
 operationalized in Python (pandas, matplotlib) and Excel. Also comfortable
 in MATLAB.
 
+### Beyond the toolkit
+
+A few fixes outside this toolkit too, merged into other people's codebases:
+two documentation and example corrections in NVIDIA's OpenUSD learning
+repository, and a hardware spec correction in NetBox's device-type library,
+a wrong Huawei server entry, checked against the manufacturer's own
+datasheet before it went in. Same habit as the toolkit above: check the
+record against the source of truth, fix what's wrong.
+
 ### Elsewhere
 
 [LinkedIn](https://www.linkedin.com/in/alexandru-nicolau-pmp%C2%AE-b64274165/)
