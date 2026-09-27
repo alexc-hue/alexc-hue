@@ -56,11 +56,21 @@ different ad-hoc looks:
 
 A note on the code itself: project-controls-reporting-engine and
 recovery-scenario-planner don't import the other four tools' logic, they
-vendor it, exact copies of the EVM, CPM, and risk-scoring modules, kept in
-sync by hand whenever the source tool changes. That's a deliberate
-convention, not copy-paste sloppiness: every repo in this toolkit needs to
-stand alone and be cloneable on its own, so the two composite tools can't
-depend on the four standalone repos being installed alongside them.
+vendor it, copies of the EVM, CPM, and risk-scoring modules. That's a
+deliberate convention, not copy-paste sloppiness: every repo in this toolkit
+needs to stand alone and be cloneable on its own. Each copy records the
+source commit it came from, and CI checks both that nobody has edited the
+copy and that the source hasn't moved on without it.
+
+### How the repos are kept honest
+
+The sample output in each README is tested against what the code actually
+prints, so the numbers can't drift out of date. Where code review found a
+bug in the calculations or the report, there's a regression test for it,
+checked to fail without the fix. Every repo is versioned, with a changelog
+saying what changed in each release. Same thing I'd expect from a controls
+function: a baseline, a change record, and numbers you can trace back to
+where they came from.
 
 ### Tools I work with
 
@@ -71,11 +81,15 @@ in MATLAB.
 ### Beyond the toolkit
 
 A few fixes outside this toolkit too, merged into other people's codebases:
-two documentation and example corrections in NVIDIA's OpenUSD learning
-repository, and a hardware spec correction in NetBox's device-type library,
-a wrong Huawei server entry, checked against the manufacturer's own
-datasheet before it went in. Same habit as the toolkit above: check the
-record against the source of truth, fix what's wrong.
+documentation and example corrections in NVIDIA's OpenUSD learning
+repository, one of which grew to cover every affected lesson after the
+maintainer asked for the rest; a Huawei server spec correction in NetBox's
+device-type library, checked against the manufacturer's datasheet; a crash
+in LibreNMS, the network monitoring platform, when an APC UPS reported a
+malformed date, fixed with a regression test; and a phpIPAM API endpoint
+that returned an empty 500 error, traced to its root cause. Same habit as
+the toolkit above: check the record against the source of truth, fix
+what's wrong.
 
 ### Elsewhere
 
