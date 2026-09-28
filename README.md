@@ -16,11 +16,11 @@ process scripting (VBScript, Structured Text, FBD).
 
 ### Project Controls Toolkit
 
-Eight practical tools that operationalize core project-controls disciplines
+Six practical tools that operationalize core project-controls disciplines
 as software, each reading from CSVs and producing charts plus a saved
-report. All eight also share one fixed status color convention (good,
+report. All six also share one fixed status color convention (good,
 warning, serious, critical) and chart style, the same single RAG standard a
-project controls function would enforce across a programme, not eight
+project controls function would enforce across a programme, not six
 different ad-hoc looks:
 
 **Integration**
@@ -28,13 +28,6 @@ different ad-hoc looks:
   composes four of the tools below (schedule, EVM, risk, change) against
   one consistent programme into a single integrated status report, no new
   logic, just the four disciplines' findings shown side by side.
-
-**Commissioning Readiness**
-- [commissioning-readiness-gate](https://github.com/alexc-hue/commissioning-readiness-gate):
-  per data hall, a ready / conditional / not-ready verdict with reasons for
-  starting the next commissioning level (L1 to L5, strict sequencing),
-  from the punch list, a design-load vs provisioned power and cooling
-  check, and assets read from NetBox. Synthetic sample data.
 
 **Schedule Integrity**
 - [schedule-health-analyzer](https://github.com/alexc-hue/schedule-health-analyzer):
@@ -45,7 +38,7 @@ different ad-hoc looks:
 - [recovery-scenario-planner](https://github.com/alexc-hue/recovery-scenario-planner):
   models and ranks recovery interventions (add resources, re-sequence,
   accept delay) against a programme's schedule/cost/risk status, the
-  toolkit's decision layer: the other tools report a status, this one
+  toolkit's decision layer: the other five tools report a status, this one
   recommends what to do about it.
 
 **Portfolio Reporting**
@@ -61,20 +54,29 @@ different ad-hoc looks:
   cumulative budget/schedule creep from approved changes, decision cycle
   time, stale pending changes flagged.
 
-**Facility View**
-- [facility-status-digital-twin](https://github.com/alexc-hue/facility-status-digital-twin):
-  CPM schedule status placed on a facility layout, one OpenUSD block per
-  activity colored by status. A synthetic practice model: the facility is
-  a grid of placeholder blocks, not a real data hall.
+A note on the code itself: project-controls-reporting-engine and
+recovery-scenario-planner don't import the other four tools' logic, they
+vendor it, copies of the EVM, CPM, and risk-scoring modules. That's a
+deliberate convention, not copy-paste sloppiness: every repo in this toolkit
+needs to stand alone and be cloneable on its own. Each copy records the
+source commit it came from, and CI checks both that nobody has edited the
+copy and that the source hasn't moved on without it.
 
-A note on the code itself: project-controls-reporting-engine,
-recovery-scenario-planner and facility-status-digital-twin don't import the
-other tools' logic, they vendor it, copies of the EVM, CPM, and
-risk-scoring modules. That's a deliberate convention, not copy-paste
-sloppiness: every repo in this toolkit needs to stand alone and be
-cloneable on its own. Each copy records the source commit it came from, and
-CI checks both that nobody has edited the copy and that the source hasn't
-moved on without it.
+### Applied: data center practice models (synthetic data)
+
+Two separate repos that apply the same methods to data center delivery.
+Everything in them is made up; they are practice models, not a record of
+real data center work.
+
+- [commissioning-readiness-gate](https://github.com/alexc-hue/commissioning-readiness-gate):
+  per data hall, a ready / conditional / not-ready verdict with reasons for
+  starting the next commissioning level (L1 to L5, strict sequencing),
+  from the punch list, a design-load vs provisioned power and cooling
+  check, and assets read from NetBox.
+- [facility-status-digital-twin](https://github.com/alexc-hue/facility-status-digital-twin):
+  CPM schedule status placed on a facility layout, built on the toolkit's
+  CPM and EVM engines: one OpenUSD block per activity, colored by status.
+  The facility is a grid of placeholder blocks, not a real data hall.
 
 ### How the repos are kept honest
 
